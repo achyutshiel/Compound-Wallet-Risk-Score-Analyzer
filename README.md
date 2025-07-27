@@ -50,6 +50,8 @@ compound_wallet_risk/
 
 ## 🖼️ Histogram of Risk Scores
 
+<img width="881" height="75" alt="Screenshot 2025-07-27 152158" src="https://github.com/user-attachments/assets/bbc68fcd-47e1-4b0f-95d1-7f4f87e67049" />
+
 ![wallet_score_histogram](https://github.com/user-attachments/assets/570a88aa-dc79-40f1-9d60-0c9ca1a41b26)
 
 ---
@@ -78,20 +80,26 @@ score = max(650, min(score, 1000))
 🌐 The Graph API (GraphQL queries)
 
 ## 🛠️ Setup & Usage
+1. Virtual environment
+```
+python -m venv venv
+venv\Scripts\activate
+deactivate # optional if you want to shut it properly
+```
 
-1.Clone the repo:
+ 2.Clone the repo:
 
 ```
 git clone https://github.com/achyutshiel/compound-wallet-risk.git
 cd compound-wallet-risk
 ```
 
-2. Install dependencies:
+3. Install dependencies:
 ```
 pip install -r requirements.txt
 ```
 
-3. Run the project:
+4. Run the project:
 ```
 python compound_risk_score.py
 ```
